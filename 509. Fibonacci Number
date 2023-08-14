@@ -1,0 +1,11 @@
+class Solution {
+    public int fib(int n) {
+        if(n==0 || n==1){
+            return n;
+        }
+        int fibo1 = fib(n-1);
+        int fibo2 = fib(n-2);
+        int nth = fibo1 + fibo2;
+        return nth;
+    }
+}
